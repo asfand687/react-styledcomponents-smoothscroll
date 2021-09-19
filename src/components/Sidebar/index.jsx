@@ -6,6 +6,8 @@ import {
 	SidebarMenu,
 	SidebarRoute,
 	SideBtnWrap,
+	SidebarWrapper,
+	SidebarLink,
 } from './SidebarElements'
 
 const Sidebar = () => {
