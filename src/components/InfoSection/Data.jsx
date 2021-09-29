@@ -13,4 +13,5 @@ export const homeObjOne = {
 	dark: true,
 	primary: true,
 	darkText: false,
+	imgStart: true,
 }

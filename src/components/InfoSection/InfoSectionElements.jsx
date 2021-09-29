@@ -22,28 +22,24 @@ export const InfoWrapper = styled.div`
 `
 
 export const InfoRow = styled.div`
-	display: grid;
-	grid-auto-columns: minmax(auto, 1fr);
+	display: flex;
 	align-items: center;
-	grid-template-areas: ${({ imgStart }) =>
-		imgStart ? `'col2 col1'` : `'col1 col2'`};
-
-	@media screen and (max-width: 760px) {
-		grid-template-areas: ${({ imgStart }) =>
-			imgStart ? `'col1' 'col2'` : `'col1 col1' : 'col2 col2'`};
+	justify-content: space-between;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
 	}
 `
 
 export const Column1 = styled.div`
 	margin-bottom: 15px;
 	padding: 0 15px;
-	grid-area: col2;
+	order: 2;
 `
 
 export const Column2 = styled.div`
 	margin-bottom: 15px;
 	padding: 0 15px;
-	grid-area: col2;
 `
 
 export const TextWrapper = styled.div`
